@@ -1,0 +1,8 @@
+{
+  "name": "mazebot",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "ansi": "~0.0.3"
+  }
+}
