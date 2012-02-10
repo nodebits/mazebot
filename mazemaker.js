@@ -129,7 +129,8 @@ var cursor = ansi(process.stdout);
 grid.forEach(function (line, y) {
   line.forEach(function (cell, x) {
     if (cell) {
-      cursor.bg.rgb(x * 3 % 256, y * 4 % 256, (x + y) % 128 + 128)
+      var color = (Math.random() * 0x1000000 << 0) | 0x808080
+      cursor.bg.hex(color.toString(16));
     } else {
       cursor.bg.reset();
     }
